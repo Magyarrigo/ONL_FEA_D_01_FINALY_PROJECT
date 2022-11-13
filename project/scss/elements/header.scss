@@ -1,0 +1,80 @@
+.header{
+  height: 70px;
+  box-shadow: 0 3px 6px $color-primary-shadow;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  &__nav{
+    display:flex;
+  }
+  .nav{
+    &__link {
+      color: $color-grey;
+      font-weight: 700;
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      padding: 28px 18px 22px;
+      border-bottom: 4px solid transparent;
+      letter-spacing: 0.1875rem;
+    }
+    &__link:hover {
+      color: $color-black;
+      border-color: $color-primary;
+    }
+    &__element {
+      padding: 0 26px;
+    }
+    &__element:last-child {
+      padding-right: 0;
+    }
+    &__menu--btn{
+      display:none;
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      opacity: 0;
+    }
+    &__menu--switch{
+      display: none;
+
+      span {
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-bottom: 3px;
+        background-color: $color-primary;
+        transition: .3s all ease-in-out;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      @include mobile{
+        display: block;
+      }
+    }
+    @include mobile {
+      position: absolute;
+      left: 0;
+      top: 95px;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      padding-bottom: 20px;
+      display: none;
+
+      .nav__element {
+        padding: 0;
+      }
+
+      .nav__link {
+        display: block;
+        padding: 14px 20px;
+      }
+    }
+
+  }
+
+}
