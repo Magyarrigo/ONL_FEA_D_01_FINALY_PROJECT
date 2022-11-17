@@ -1,80 +1,119 @@
-.header{
+.header {
+
   height: 70px;
   box-shadow: 0 3px 6px $color-primary-shadow;
-  &__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-  &__nav{
-    display:flex;
-  }
-  .nav{
-    &__link {
-      color: $color-grey;
-      font-weight: 700;
-      font-size: 0.6875rem;
-      text-transform: uppercase;
-      padding: 28px 18px 22px;
-      border-bottom: 4px solid transparent;
-      letter-spacing: 0.1875rem;
-    }
-    &__link:hover {
-      color: $color-black;
-      border-color: $color-primary;
-    }
-    &__element {
-      padding: 0 26px;
-    }
-    &__element:last-child {
-      padding-right: 0;
-    }
-    &__menu--btn{
-      display:none;
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-      opacity: 0;
-    }
-    &__menu--switch{
-      display: none;
 
-      span {
-        width: 20px;
-        height: 2px;
-        display: block;
-        margin-bottom: 3px;
-        background-color: $color-primary;
-        transition: .3s all ease-in-out;
-        &:last-child{
-          margin-bottom: 0;
+  &__container {
+    height: 100%;
+    .nav{
+      background-color: $color-light-grey;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding: 2em;
+      position: relative;
+
+      .logo {
+        margin-left: 2px;
+        display: flex;
+        align-items: center;
+        //height: 100%;
+        width: 20%;
+
+
+
+        &__rigo {
+          border-radius: 50%;
+          border: solid 2px $color-grey;
+          width: 2.5rem;
+          height: 2.5rem;
+          background-image: url("../assets/swan-male.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        &__string {
+          font-family: $font-raleway;
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: $color-logo-string;
+          margin-left: 2px;
         }
       }
-      @include mobile{
-        display: block;
+      &__buttons{
+        @include mobile{
+          position: absolute;
+          right: 0;
+          top: 75px;
+          background-color: $color-primary-shadow;
+          height: 93vh;
+          flex-direction: column;
+          
+
+        }
+        display: flex;
+        width: 55%;
+        justify-content: space-around;
       }
-    }
-    @include mobile {
-      position: absolute;
-      left: 0;
-      top: 95px;
-      flex-direction: column;
-      background-color: white;
-      width: 100%;
-      padding-bottom: 20px;
-      display: none;
+      &__element{
+        a{
 
-      .nav__element {
-        padding: 0;
+          &:hover{
+            background-color: $color-grey-medium;
+            border-radius: 20px;
+          }
+          position: relative;
+          padding: 0.2em;
+          &:after{
+              content: '';
+              position: absolute;
+              bottom: -25px;
+              left: 0;
+              background-color: $color-primary;
+              height: 0.15em;
+              border-radius: 10px;
+              transition: .3s ease-in-out;
+            }
+          &:hover::after{
+            width: 100%;
+          }
+        }
+
       }
 
-      .nav__link {
-        display: block;
-        padding: 14px 20px;
-      }
-    }
+      &__hamburger{
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display:none;
+        &--line{
+          width: 3em;
+          height: 0.3em;
+          background-color: $color-primary;
+          margin: 0.7em;
+          border-radius: 20px;
+          transition: 0.3s ease-in-out;
+        }
 
-  }
 
+     }
+   }
+ }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

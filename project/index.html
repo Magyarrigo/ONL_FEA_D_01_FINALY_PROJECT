@@ -17,16 +17,18 @@
 
 <header class = "header">
     <div class = "container header__container">
-        <a href ="#" class = "logo">MagyarRigo</a>
-        <div class = "rigo">LOGO</div>
+
+
+
         <nav class = "nav">
-            <input type = "checkbox" class = "nav__menu--btn" id="nav__menu--btn">
-            <label for = 'nav__menu--btn' class="nav__menu--switch">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class = "header__nav">
+
+            <div class = "logo">
+                <div class = "logo__rigo"></div>
+                <a href ="#" class = "logo__string">MagyarRigo</a>
+            </div>
+
+
+            <ul class = "nav__buttons">
                 <li class = "nav__element">
                     <a href="#home" class = "nav__link">HOME</a>
                 </li>
@@ -40,6 +42,12 @@
                     <a href="#contact" class = "nav__link">CONTACT</a>
                 </li>
             </ul>
+
+            <button class = 'nav__hamburger'>
+                <div class = 'nav__hamburger--line'></div>
+                <div class = 'nav__hamburger--line'></div>
+                <div class = 'nav__hamburger--line'></div>
+            </button>
         </nav>
     </div>
 
