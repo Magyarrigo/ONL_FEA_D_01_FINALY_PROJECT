@@ -337,6 +337,54 @@ textarea {
   padding: 0.2em 0;
 }
 
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -355,8 +403,22 @@ h2 {
 }
 
 .container {
-  width: 1352px;
+  max-width: 1325px;
   margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class*=col-] {
+  min-height: 1px;
+}
+@media only screen and (max-width: 795px) {
+  [class*=col-] {
+    width: 100%;
+  }
 }
 
 .header {
@@ -403,7 +465,7 @@ h2 {
   width: 55%;
   justify-content: space-around;
 }
-@media only screen and (max-width: 792px) {
+@media only screen and (max-width: 795px) {
   .header__container .nav__buttons {
     position: absolute;
     right: 0;
@@ -426,7 +488,7 @@ h2 {
   font-weight: bold;
 }
 .header__container .nav__element a:hover {
-  background-color: #e1e1e1;
+  background-color: #e1e2e3;
   border-radius: 20px;
 }
 .header__container .nav__element a:after {
@@ -457,7 +519,7 @@ h2 {
   border-radius: 20px;
   transition: 0.3s ease-in-out;
 }
-@media only screen and (max-width: 792px) {
+@media only screen and (max-width: 795px) {
   .header__container .nav__hamburger {
     display: block;
     transition: 0.3s ease-in-out;
@@ -471,5 +533,91 @@ h2 {
   .header__container .nav__hamburger--active .nav__hamburger--line:nth-child(3) {
     transform: rotate(45deg) translateY(-10px);
   }
+}
+
+.zero {
+  height: 250px;
+  background-color: red;
+}
+
+.jeden {
+  height: 150px;
+  background-color: greenyellow;
+}
+
+.dwa {
+  height: 150px;
+  background-color: blue;
+}
+
+.trzy {
+  height: 150px;
+  background-color: orangered;
+}
+
+.cztery {
+  height: 150px;
+  background-color: black;
+}
+
+.piec {
+  height: 150px;
+  background-color: springgreen;
+}
+
+.szesc {
+  height: 150px;
+  background-color: yellow;
+}
+
+.one {
+  height: 200px;
+  background-color: #818181;
+}
+
+.two {
+  height: 200px;
+  background-color: #818181;
+}
+
+.three {
+  height: 200px;
+  background-color: #818181;
+}
+
+.four {
+  height: 200px;
+  background-color: #818181;
+}
+
+.cal {
+  height: 300px;
+  border: solid 2px black;
+  background-color: goldenrod;
+}
+
+.myPicture {
+  position: relative;
+  height: 350px;
+  border: blue 2px solid;
+}
+.myPicture--Photo {
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  border: blue 2px solid;
+}
+@media only screen and (max-width: 795px) {
+  .myPicture--Photo {
+    left: 35%;
+  }
+}
+
+.myCV {
+  height: 350px;
+  border: blue 2px solid;
 }
 /*# sourceMappingURL=main.css.map */
