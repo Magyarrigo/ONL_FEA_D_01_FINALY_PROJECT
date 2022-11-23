@@ -423,7 +423,7 @@ h2 {
 
 .header {
   height: 70px;
-  box-shadow: 0 3px 6px rgba(0, 128, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 128, 0, 0.26);
 }
 .header__container {
   width: 100%;
@@ -438,11 +438,16 @@ h2 {
   padding: 2em;
   position: relative;
 }
+@media only screen and (max-width: 795px) {
+  .header__container .nav__link {
+    color: #ffffff;
+  }
+}
 .header__container .nav .logo {
   margin-left: 2px;
   display: flex;
   align-items: center;
-  width: 20%;
+  width: 30%;
 }
 .header__container .nav .logo__rigo {
   border-radius: 50%;
@@ -478,6 +483,7 @@ h2 {
   }
   .header__container .nav__buttons--active {
     transform: translate(0%);
+    z-index: 5;
   }
 }
 .header__container .nav__element a {
@@ -535,9 +541,56 @@ h2 {
   }
 }
 
-.zero {
-  height: 1250px;
-  background-color: red;
+.openning {
+  width: 100%;
+  max-width: 1325px;
+  position: relative;
+  max-height: 600px;
+}
+.openning__Slides {
+  width: 100%;
+  height: 100%;
+}
+.openning__Button--Left {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #000000;
+  color: #F7F7F7;
+  border: solid 2px #000000;
+  border-radius: 50%;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+.openning__Button--Right {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #000000;
+  color: #F7F7F7;
+  border: solid 2px #000000;
+  border-radius: 50%;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+.openning__Title {
+  width: 75%;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  left: 10%;
+  font-size: 800;
+  font-weight: bold;
+  border: solid 3px #0000ff;
+  border-radius: 50px;
+  background-color: rgba(0, 128, 0, 0.26);
+  color: #0000ff;
 }
 
 .jeden {
