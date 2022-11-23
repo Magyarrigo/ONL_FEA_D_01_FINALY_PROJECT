@@ -422,6 +422,7 @@ h2 {
 }
 
 .header {
+  max-width: 1590px;
   height: 70px;
   box-shadow: 0 3px 6px rgba(0, 128, 0, 0.26);
 }
@@ -593,34 +594,30 @@ h2 {
   color: #0000ff;
 }
 
-.jeden {
-  height: 415px;
-  background-color: greenyellow;
+.offer {
+  max-width: 1325px;
+  position: relative;
+  max-height: 600px;
+  border: 2px solid #0000ff;
+  border-radius: 20px;
+  background-color: rgba(0, 128, 0, 0.26);
 }
-
-.dwa {
-  height: 415px;
-  background-color: blue;
+.offer__box {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
-
-.trzy {
-  height: 415px;
-  background-color: orangered;
+.offer__box--content {
+  margin: 1em;
 }
-
-.cztery {
-  height: 415px;
-  background-color: black;
+.offer__box--title {
+  text-align: center;
+  font-weight: bold;
 }
-
-.piec {
-  height: 415px;
-  background-color: springgreen;
-}
-
-.szesc {
-  height: 415px;
-  background-color: yellow;
+.offer__smallBox {
+  width: 100%;
 }
 
 .one {
