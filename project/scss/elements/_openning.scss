@@ -2,6 +2,7 @@
   width: 100%;
   max-width: $containerWidth;
   position:relative;
+
   //background-color: red;
   max-height: 600px;
   &__Slides{
@@ -42,7 +43,7 @@
     width: 75%;
     position: absolute;
     text-align: center;
-    top: 10%;
+    top: 15%;
     left: 10%;
     font-size: 800;
     font-weight: bold;
