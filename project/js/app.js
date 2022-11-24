@@ -45,14 +45,14 @@ function showSlide(n){
 
 function Calculator(form, summary) {
     this.prices = {
-        products: 0.5,
+        products: 725,
         orders: 0.25,
         package: {
-            basic: 10,
-            professional: 25,
-            premium: 60
+            basic: 0,
+            professional: 525,
+            premium: 1600
         },
-        accounting: 40,
+        accounting: 400,
         terminal: 5
     };
 

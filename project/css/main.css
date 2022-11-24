@@ -624,24 +624,26 @@ h2 {
   width: 100%;
 }
 
-.one {
-  height: 200px;
-  background-color: #818181;
+.pricing {
+  border: solid 2px #0000ff;
+  border-radius: 25px;
+  background-color: #e1e2e3;
 }
-
-.two {
-  height: 200px;
-  background-color: #818181;
+.pricing__article {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-
-.three {
-  height: 200px;
-  background-color: #818181;
+.pricing__article--title {
+  text-align: center;
+  font-weight: bold;
+  color: #0000ff;
+  padding: 1em;
 }
-
-.four {
-  height: 200px;
-  background-color: #818181;
+.pricing__article--content {
+  text-align: center;
 }
 
 .calc {
@@ -787,6 +789,14 @@ h2 {
 .calc__summary .list__item .item__price {
   font-weight: 700;
   font-size: 1.125rem;
+}
+
+#terminal {
+  display: none;
+}
+
+#orders {
+  display: none;
 }
 
 .myPicture {
