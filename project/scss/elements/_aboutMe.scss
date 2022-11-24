@@ -1,23 +1,38 @@
-.myPicture{
-  position:relative;
-  height: 350px;
-  border: blue 2px solid;
-  &--Photo{
-    position: absolute;
-    left: 80px;
-    top: 80px;
-    height: 175px;
-    width: 175px;
-    border-radius: 50%;
+.aboutMe{
+  &__myPicture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
     border: blue 2px solid;
-    @include mobile{
-      left: 35%;
+    border-radius: 20px;
+    background-image: url("../assets/hosok_2.jpg");
+    background-size: cover;
+    &--Photo{
+      width: 55%;
+      height: auto;
+      border-radius: 20px;
+      @include mobile{
+        left: 35%;
+      }
+    }
+  }
+  &__myCV{
+    background-color: $color-grey-medium;
+    border: blue 2px solid;
+    border-radius: 20px;
+    h2{
+      text-align: center;
+      font-weight: bold;
+      font-size: 600;
+      color: $color-primary;
+      padding-top: 1em;
+    }
+    p{
+      padding: 1.5em 3em 0 3em;
+      letter-spacing: 2px;
+
     }
 
-
   }
-}
-.myCV{
-  height: 350px;
-  border: blue 2px solid;
 }

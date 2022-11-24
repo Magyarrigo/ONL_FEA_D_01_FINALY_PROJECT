@@ -799,28 +799,40 @@ h2 {
   display: none;
 }
 
-.myPicture {
+.aboutMe__myPicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  height: 350px;
   border: blue 2px solid;
+  border-radius: 20px;
+  background-image: url("../assets/hosok_2.jpg");
+  background-size: cover;
 }
-.myPicture--Photo {
-  position: absolute;
-  left: 80px;
-  top: 80px;
-  height: 175px;
-  width: 175px;
-  border-radius: 50%;
-  border: blue 2px solid;
+.aboutMe__myPicture--Photo {
+  width: 55%;
+  height: auto;
+  border-radius: 20px;
 }
 @media only screen and (max-width: 795px) {
-  .myPicture--Photo {
+  .aboutMe__myPicture--Photo {
     left: 35%;
   }
 }
-
-.myCV {
-  height: 350px;
+.aboutMe__myCV {
+  background-color: #e1e2e3;
   border: blue 2px solid;
+  border-radius: 20px;
+}
+.aboutMe__myCV h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 600;
+  color: #0000ff;
+  padding-top: 1em;
+}
+.aboutMe__myCV p {
+  padding: 1.5em 3em 0 3em;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=main.css.map */
