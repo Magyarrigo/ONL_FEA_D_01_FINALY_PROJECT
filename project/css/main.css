@@ -556,14 +556,18 @@ h2 {
   height: 100%;
   border-radius: 20px;
 }
+.openning__Button:hover {
+  cursor: pointer;
+}
 .openning__Button--Left {
   position: absolute;
   top: 45%;
   left: 0;
   height: 50px;
   width: 50px;
-  background-color: #000000;
-  color: #F7F7F7;
+  background-image: url("../assets/arrow_left.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: solid 2px #000000;
   border-radius: 50%;
   text-align: center;
@@ -576,8 +580,9 @@ h2 {
   right: 0;
   height: 50px;
   width: 50px;
-  background-color: #000000;
-  color: #F7F7F7;
+  background-image: url("../assets/arrow_right.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: solid 2px #000000;
   border-radius: 50%;
   text-align: center;
