@@ -19,7 +19,8 @@
       position: relative;
       &__link{
         @include mobile{
-          color:$color-white;
+
+          color:$color-primary;
         }
       }
 
@@ -53,7 +54,7 @@
           position: absolute;
           right: 0;
           top: 75px;
-          //background-color: $color-grey-medium;
+          background-color: $color-grey-medium;
           height: 20vh;
           flex-direction: column;
           text-align: center;

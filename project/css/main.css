@@ -444,7 +444,7 @@ h2 {
 }
 @media only screen and (max-width: 795px) {
   .header__container .nav__link {
-    color: #ffffff;
+    color: #0000ff;
   }
 }
 .header__container .nav .logo {
@@ -479,6 +479,7 @@ h2 {
     position: absolute;
     right: 0;
     top: 75px;
+    background-color: #e1e2e3;
     height: 20vh;
     flex-direction: column;
     text-align: center;
